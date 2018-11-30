@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Layout 2</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        header{
+            background-color: palevioletred;
+            text-align: center;
+            height: 20vh;
+            width: 100%;
+        }
+        .content{
+            background-color: aquamarine;
+            display:flex;
+            text-align: center;
+            height: 60vh;
+            width: 100%;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-evenly;
+            padding-top: 20px;
+        }
+        .sidebar{
+            background-color: skyblue;
+            width: 27.5%;
+            height: 90%;
+            
+        }
+        .mainbar{
+            background-color: crimson;
+            height: 90%;
+            width: 67.5%;
+            
+        }
+        footer {
+            background-color: chartreuse;
+            height: 20vh;
+            width: 100%;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <div class="content">
+        <div class="sidebar">Sidebar Column 1</div>
+        <div class="mainbar">Content Column 2</div>
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
